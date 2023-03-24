@@ -1,0 +1,261 @@
+
+
+*::after,*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-family: 'Recursive'
+}
+
+body{
+    margin: 0%;
+    padding: 0%;
+    overflow-x: hidden;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-family: 'Recursive';
+}
+
+/* -------------------------------- Debut Header -------------------------------- */
+
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-end;
+    background-color: rgb(255, 255, 255);
+    height: 70px;
+    font-size: 20px;
+}
+
+nav .Navbar {
+    margin: 10px ;
+    padding: 10px;
+}
+
+nav .Navbar a{
+    text-decoration: none ;
+    color: #084B83;
+    margin-right: 10px ;
+    padding: 10px;
+    transition: all 150ms ease-in;
+}
+
+.Navbar a:hover{
+    background-color: #42BFDD;
+    color: #F0F6F6;
+    border-radius: 10px;
+}
+
+.Bou{
+    width: 130px;
+    height: 50px;
+    margin: 10px ;
+    padding: 0px 10px;
+    right: 40px;
+    top: 10px;
+    position: absolute;
+    background-color: #FF66B3;
+    color: #F0F6F6;
+    border: 1px solid #FF66B3;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 17px;
+    cursor: pointer;
+    transition: all 250ms ease-in;
+}
+
+.Bou:hover {
+    border: 1px solid #FF66B3;
+    background: transparent;
+    color: #FF66B3;
+}
+
+.icon {
+    margin: 10px ;
+    padding: 10px;
+}
+
+.logo_con a{
+    padding: 0px 10px;
+    top: 0.1px;
+    left: 20px;
+    position: absolute;
+
+}
+
+header { 
+    background-image: url(../IMAGES/1.jpg);
+    position: relative;
+    height: 90vh;
+    width: 100vw;
+
+}
+
+.Titre h1 {
+    position: absolute;
+    top: 220px;
+    left: 120px;
+    color: #084B83; 
+    font-size: 60px;
+    letter-spacing: 10px;
+    animation: textAnime 1s ease-in-out infinite; 
+}
+
+/* @keyframes textAnime {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(20deg);
+    }
+} */
+
+/* -------------------------------- Fin Header -------------------------------- */
+
+
+.image__wrapper {
+    padding: 2rem;
+    display: flex;
+    align-items: center; 
+    justify-content: space-around;
+    height: 50vh;
+    width: 100vw;
+    margin-top: 25px;
+    margin-bottom: 35px ;
+}
+
+.image__wrapper__ { 
+    background-image: url(../IMAGES/12.jpg);
+    border-radius: 25px;
+    background-color: red;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    aspect-ratio: 3/2.2;
+    display: flex;
+    justify-content: center;
+    /* transform : translateX(5px); */
+  
+}
+
+.image__wrapper__1 { 
+    background-image: url(../IMAGES/13.jpg);
+    background-color: red;
+    border-radius: 25px;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    aspect-ratio: 3/2.2;
+    display: flex;
+    justify-content: center;
+    /* transform : translateX(5px); */
+}
+
+.image__wrapper__2 { 
+    background-image: url(../IMAGES/14.jpg);
+    background-color: red;
+    border-radius: 25px;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    aspect-ratio: 3/2.2;
+    display: flex;
+    justify-content: center;
+    /* transform : translateX(5px); */ 
+}
+
+
+.C_text_c{
+    width: 50vw;
+    height: 50vh;
+    background-color: #BBE6E4;
+    border-radius: 20px;
+    text-align: center;
+    line-height: 30px;
+}
+
+.C_text{
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px;
+    color: #084B83;
+    margin-right: 10px;
+    /* text-align: justify; */
+}
+  
+
+
+/* -------------------------------------- Debut footer ------------------------------------- */
+
+.footer_{
+    padding: 40px 0 ;
+    background-color: #bbe6e498;
+
+}
+
+.logo{
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+.footer_ .social{
+    text-align: center;
+    padding-bottom: 25px;
+    color: #FF66B3;
+}
+
+.footer_ .social a{
+    font-size: 24px ;
+    color: inherit;
+    border: 1px solid #FF66B3;
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    display: inline-block;
+    text-align: center ;
+    border-radius: 50%;
+    margin: 0 8px;
+    opacity: 0,75;
+    margin-top: 15px;
+}
+
+.footer_ .social a:hover{
+    opacity: 0,9;
+}
+
+.footer_ ul  {
+    margin-top: 0;
+    padding: 0;
+    list-style: none; 
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 0;
+    text-align: center ;
+    color: #084B83;
+}
+
+.footer_ ul li a {
+    color: inherit;
+    text-decoration: none ;
+    opacity : 0,8; 
+}
+
+.footer_ ul li {
+    display: inline-block;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+
+.footer_ ul li a:hover {
+    opacity: 1;
+}
+
+/* -------------------------------------- Fin  footer ------------------------------------- */
+

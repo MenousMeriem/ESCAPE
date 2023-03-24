@@ -1,0 +1,482 @@
+
+*::after,*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-family: 'Recursive'
+}
+
+body{
+    margin: 0%;
+    padding: 0%;
+    overflow-x: hidden;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-family: 'Recursive';
+}
+
+/* -------------------------------- Debut Header -------------------------------- */
+
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-end;
+    background-color: rgb(255, 255, 255);
+    height: 70px;
+    font-size: 20px;
+}
+
+nav .Navbar {
+    margin: 10px ;
+    padding: 10px;
+}
+
+nav .Navbar a{
+    text-decoration: none ;
+    color: #084B83;
+    margin-right: 10px ;
+    padding: 10px;
+    transition: all 150ms ease-in;
+}
+
+.Navbar a:hover{
+    background-color: #42BFDD;
+    color: #F0F6F6;
+    border-radius: 10px;
+}
+
+.Bou{
+    width: 130px;
+    height: 50px;
+    margin: 10px ;
+    padding: 0px 10px;
+    right: 40px;
+    top: 10px;
+    position: absolute;
+    background-color: #FF66B3;
+    color: #F0F6F6;
+    border: 1px solid #FF66B3;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 17px;
+    cursor: pointer;
+    transition: all 250ms ease-in;
+}
+
+.Bou:hover {
+    border: 1px solid #FF66B3;
+    background: transparent;
+    color: #FF66B3;
+}
+
+.icon {
+    margin: 10px ;
+    padding: 10px;
+}
+
+.logo_con a{
+    padding: 0px 10px;
+    top: 0.1px;
+    left: 20px;
+    position: absolute;
+
+}
+
+header { 
+    background-image: url(../IMAGES/1.jpg);
+    position: relative;
+    height: 90vh;
+    width: 100vw;
+
+}
+
+.Titre h1 {
+    position: absolute;
+    top: 220px;
+    left: 120px;
+    color: #084B83; 
+    font-size: 60px;
+    letter-spacing: 10px;
+    animation: textAnime 1s ease-in-out infinite; 
+}
+
+/* @keyframes textAnime {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(20deg);
+    }
+} */
+
+/* -------------------------------- Fin Header -------------------------------- */
+
+
+/* -------------------------------- Debut places populaires ------------------------------- */
+
+.Général{
+    background: hsl(177, 46%, 92%);
+}
+
+.Text{
+    font-size: 30px;
+    color: #084B83;
+    margin-left: 40px;
+    /* text-align: center; */
+}
+
+.container{
+    padding-block: 3rem;
+    display: flex;
+    justify-content: space-around;
+    background: hsl(177, 46%, 92%);
+}
+
+.Text .nav__container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.Text .nav__container ul {
+    display: flex;
+    padding-right: 3rem;
+    gap: 1.5rem;
+}
+.Text .nav__container ul  li {
+    list-style: none;
+}
+.Text .nav__container ul  li a  {
+    text-decoration: none;
+    color: inherit;
+    font-weight: 600;
+    color: #084B83;
+    font-size: 1.3rem;
+    transition: color 150ms ease-in;
+}
+.Text .nav__container ul  li a:hover  {
+    color: #42BFDD;    
+}
+.Text .nav__container ul  li .pink  {
+    text-decoration: none;
+    color: inherit;
+    font-weight: 600;
+    color: #FF66B3;
+    font-size: 1.3rem;
+}
+
+.cards{
+    width: 300px;
+    background-color: #BBE6E4;
+    border-radius: 15px;
+    border: 1px solid hsl(0, 0%, 90%);
+    box-shadow: 0px 10px 10px rgb(108, 106, 106);
+    cursor: pointer;
+    transition: transform 400ms ease-in-out;
+    margin-top: 35px;
+    margin-bottom: 35px ;
+}
+
+.cards:hover {
+transform: scale(1.2);
+}
+
+.card-img img{
+    border-radius: 15px;
+	height: 200px;
+    display: block;
+    width: 300px;
+    opacity: .6;
+    cursor: pointer;
+    transition: opacity 200ms ease-in-out;
+}
+
+.card-img img:hover {
+    opacity: 1;
+}
+
+.card-body h2{
+    color: #084B83;
+    text-align: left;
+    font-size: 130%;
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 40px;
+}
+
+.card-body p{
+    margin-left: 10px;
+    margin-right: 10px;
+    color: #084B83;
+    text-align: left;
+    font-size: 80%;
+    /* height: 40px; */
+}
+
+/* ------------------------------  Fin Places populaires --------------------------------------*/
+
+
+.Text_titre{
+    font-size: 20px;
+    text-align: center;
+    color: #084B83;
+    margin-top: 20px;
+}
+.image__wrapper {
+    padding: 2rem;
+    display: flex;
+    align-items: center; 
+    justify-content: space-around;
+    height: 60vh;
+    width: 100vw;
+    margin-top: 25px;
+    margin-bottom: 35px ;
+}
+
+.image__wrapper__ { 
+    background-image: url(../IMAGES/7.jpg);
+    /* background-color: red; */
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    aspect-ratio: 3/2.2;
+    display: flex;
+    justify-content: center;
+    /* transform : translateX(5px); */
+  
+}
+
+.C_text{
+    color: #084B83;
+    line-height: 50px;
+    margin-right: 100px;
+    text-align: center;
+}
+
+
+
+/* ------------------------------------ Debut Nos Galerie -------------------------------- */
+
+.Text__ {
+    display: flex;
+    justify-content: space-between;
+    font-size: 35px;
+    color: #084B83;
+    margin-left: 20px;
+}
+
+.Bou__{
+    width: 130px;
+    height: 50px;
+    margin: 10px ;
+    padding: 0px 10px;
+    right: 40px;
+    top: 40px;
+    /* position: absolute; */
+    position: relative;
+    background-color: #FF66B3;
+    color: #F0F6F6;
+    border: 1px solid #FF66B3;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 17px;
+    cursor: pointer;
+    transition: all 250ms ease-in;
+}
+
+.Bou__:hover {
+    border: 1px solid #FF66B3;
+    background: transparent;
+    color: #FF66B3;
+}
+
+.grid-container {
+    display: grid;
+    gap: 10px;
+    /* background-color: #2196F3;  */
+    padding: 10px;
+    height: 100vh;
+    width: 100vw;
+    height: 80vh;
+    grid-template-areas:
+    "item-one item-two item-three"
+    "item-one item-four item-four"
+    ;
+    cursor: pointer;
+    transition: transform 200ms ease-in-out;
+}
+
+.grid-item {
+    border-radius: 10px;
+
+}
+    .item1 {
+        grid-area: item-one;
+        background-image: url('../IMAGES/G_1.jpg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        opacity: .7;
+    }
+    .item1:hover{
+        transform: scale(1.1);
+        opacity: 1;
+    }
+    .item2 {
+        grid-area: item-two;
+        background-image: url('../IMAGES/G_2.jpg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        opacity: .7;
+    }
+    .item2:hover{
+        transform: scale(1.1);
+        opacity: 1;
+    }
+    .item3 {
+        grid-area: item-three;
+        background-image: url('../IMAGES/G_3.jpg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        opacity: .7;
+    }
+    .item3:hover{
+        transform: scale(1.1);
+        opacity: 1;
+    }
+    .item4 {
+        grid-area: item-four;
+        background-image: url('../IMAGES/G_4.jpg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        opacity: .7;
+    }
+    .item4:hover{
+        transform: scale(1.1);
+        opacity: 1;
+    }
+
+/* ------------------------------------ Fiin Nos Galerie -------------------------------- */ 
+
+/* ------------------------------------ Debut Temoignage  -------------------------------- */ 
+
+   .Text_ {
+        font-size: 35px;
+        color: #084B83;
+        margin-left: 20px;
+    }
+
+    .C_text_c{
+        width: 50vw;
+        height: 60vh;
+        background-color: #BBE6E4;
+        border-radius: 20px;
+    }
+
+    .cc_text{
+        margin-top: 80px;
+        font-size: 26px;
+        line-height: 50px;
+        color: #084B83;  
+        text-align: center;
+    }
+
+    .image__wrapper_c {
+        /* background-color: #BBE6E4; */
+        padding: 2rem;
+        display: flex;
+        align-items: center; 
+        justify-content: space-around;
+        height: 50vh;
+        width: 100vw;
+        margin-top: 25px;
+        margin-bottom: 35px ;
+}
+
+    .image__wrapper__c { 
+        background-image: url(../IMAGES/G6.jpg);
+        position: relative;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 100%;
+        aspect-ratio: 3/2.7;
+        display: flex;
+        justify-content: center;
+        /* transform : translateX(5px); */
+    }
+
+/* ------------------------------------ Fin Temoignage  -------------------------------- */ 
+
+/* -------------------------------------- Debut footer ------------------------------------- */
+
+.footer_{
+    padding: 40px 0 ;
+    background-color: #bbe6e498;
+}
+
+.logo{
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+.footer_ .social{
+    text-align: center;
+    padding-bottom: 25px;
+    color: #FF66B3;
+}
+
+.footer_ .social a{
+    font-size: 24px ;
+    color: inherit;
+    border: 1px solid #FF66B3;
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    display: inline-block;
+    text-align: center ;
+    border-radius: 50%;
+    margin: 0 8px;
+    opacity: 0,75;
+    margin-top: 15px;
+}
+
+.footer_ .social a:hover{
+    opacity: 0,9;
+}
+
+.footer_ ul  {
+    margin-top: 0;
+    padding: 0;
+    list-style: none; 
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 0;
+    text-align: center ;
+    color: #084B83;
+}
+
+.footer_ ul li a {
+    color: inherit;
+    text-decoration: none ;
+    opacity : 0,8; 
+}
+
+.footer_ ul li {
+    display: inline-block;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+
+.footer_ ul li a:hover {
+    opacity: 1;
+}
+
+/* -------------------------------------- Fin  footer ------------------------------------- */
+
