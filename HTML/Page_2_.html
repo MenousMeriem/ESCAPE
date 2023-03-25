@@ -17,11 +17,33 @@
     integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" 
     crossorigin="anonymous"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <script src="../JS/Page_2_.js" defer></script>
 
 </head>
 
 
 <body>
+<!--------------------------------------------- Humberger ---------------------------------------------->
+ 
+<div class="hamburger">
+  <div class="hamburger__container">
+      <div class="hamone"></div>
+      <div class="hamtwo"></div>
+      <div class="hamthree"></div>
+  </div>
+  <div class="hamburger__content">
+      <ul>
+          <li><a href="../HTML/Page_1.html"> Accueil</a></li>
+          <li><a class="active_" href="../HTML/Page_2_.html">Nos destinations</a></li>
+          <li><a href="../HTML/Page_3.html"> Blog </a></li>
+          <li><a href="#"> Se connecter </a></li>
+      </ul>
+  </div>
+</div>
+
+<!--------------------------------------------- Humberger -------------------------- ------------------>
+
+  <!-- ----------------------------------------- Debut Header --------------------------------------- -->
     <header>
         <nav>
             <div class="Navbar">
@@ -31,7 +53,7 @@
                 <div>
                   <button class="Bou"> Se connecter </button>
               </div>
-                <a href="../HTML/Page_1_.html"> Acceuil</a>
+                <a href="../HTML/Page_1_.html"> Accueil</a>
                 <a href="../HTML/Page_2_.html"> Nos destination </a>
                 <a href="../HTML/Page_3_.html"> Blog </a>
             </div>
@@ -42,60 +64,72 @@
             </h1>    
         </div>
     </header>
-    
-    <div class="container">
-     <div class="nav__container">
-      <ul>
-        <li><a href="#">Plages</a></li>
-        <li><a href="#">Montagnes</a></li>
-        <li><a href="#">Forets</a></li>
-        <li><a href="#" class="pink">Tous</a></li>
-      </ul>
-     </div>
-      <div class="cards">
+  
+  <!-- ----------------------------------------- Fin Header --------------------------------------- -->
+
+
+  <!-- ----------------------------------------- Debut Cartes --------------------------------------- -->
+
+  <div class="container">
+        <div class="nav__container">
+            <ul>
+              <li><a href="#">Plages</a></li>
+              <li><a href="#">Montagnes</a></li>
+              <li><a href="#">Forets</a></li>
+              <li><a href="#" class="pink">Tous</a></li>
+            </ul>
+        </div>
+        <div class="cards">
           <div class="card-img">
-            <a type="image/png"> <img src="../IMAGES/4.jpg" alt="Logo">  </a>
+            <a type="image/png"> <img src="../IMAGES/Plage1.jpg" alt="Logo">  </a>
           </div>
           <div class="card-body">
-              <h2> Place 1 </h2>
-              <p> Lorem amet, consectetur adipiscing </p>
+              <h2> Plage Whitehaven </h2>
+              <p> La plage de Whitehaven en Australie est considérée comme l'une des plus belles plages du monde. </p>
           </div>
-            <button class="Bout"> Voir plus </button>
-      </div>
+            <button class="Bout"> Réserver </button>
+        </div>
      
       <div class="cards">
           <div class="card-img">
-            <a type="image/png"> <img src="../IMAGES/G_2.jpg" alt="Logo">  </a>
+            <a type="image/png"> <img src="../IMAGES/Plage2.jpg" alt="Logo">  </a>
           </div>
           <div class="card-body">
-              <h2> Place 2 </h2>
-              <p> Lorem amet, consectetur adipiscing </p>
+              <h2> Plage Navagio </h2>
+              <p> La plage de Navagio en Grèce est une autre plage incroyablement belle qui attire de nombreux visiteurs chaque année. </p>
           </div>
-            <button class="Bout"> Voir plus </button>
+            <button class="Bout"> Réserver </button>
       </div>
       <div class="cards">
           <div class="card-img">
-            <a type="image/png"> <img src="../IMAGES/G_1.jpg" alt="Logo">  </a>
+            <a type="image/png"> <img src="../IMAGES/Plage3.jpg" alt="Logo">  </a>
           </div>
           <div class="card-body">
-                  <h2> Place 3 </h2>
-                  <p> Lorem amet, consectetur adipiscing </p>
+                  <h2> Plage Matira </h2>
+                  <p> La plage de Matira à Bora Bora est considérée comme la plus belle plage de l'île. </p>
           </div>
           <div>
-            <button class="Bout"> Voir plus </button>
+            <button class="Bout"> Réserver </button>
           </div>
       </div>
       <div class="cards">
           <div class="card-img">
-            <a type="image/png"> <img src="../IMAGES/G_4.jpg" alt="Logo">  </a>
+            <a type="image/png"> <img src="../IMAGES/Plage4.jpg" alt="Logo">  </a>
           </div>
           <div class="card-body">
-            <h2> Place 4 </h2>
-            <p> Lorem amet, consectetur adipiscing </p>
+            <h2> Plage Pink Sands</h2>
+            <p> La plage de Pink Sands aux Bahamas est une plage unique en son genre. Le sable de cette plage est rose. </p>
           </div>
-            <button class="Bout"> Voir plus  </button>
+            <button class="Bout"> Réserver  </button>
       </div>
-  </div> 
+
+      <div class="next-previous">
+        <i class="fa-solid fa-circle-arrow-right"></i>
+        <i class="fa-solid fa-circle-arrow-left"></i>
+      </div> 
+    </div> 
+
+  <!-- ----------------------------------------- Fin Cartes --------------------------------------- -->
 
 
   <!--------------------------------------- Debut Footer -------------------------------- -->
@@ -107,7 +141,7 @@
         </div>
         <ul class="list">
             <li>
-                <a href="#">Acceuil</a>
+                <a href="#">Accueil</a>
             </li>
             <li>
                 <a href="#">Services</a>
@@ -134,21 +168,4 @@
 
 
 
- <!-- <script type="text/javascript">
-    window.addEventListener('scroll', a);
-    function a() {
-      var reveals = document.querySelectorAll('.a');
-      for (var i = 0; i < reveals.length; i++) {
-        var windowheight = window.innerHeight;
-        var revealtop = reveals[i].getBoundingClientRect().top;
-        var revealpoint = 150;
-        if (revealtop < windowheight - revealpoint) {
-          reveals[i].classList.add('activee');
-        }
-        else {
-          reveals[i].classList.remove('activee');
 
-        }
-      }
-    }
-  </script> 

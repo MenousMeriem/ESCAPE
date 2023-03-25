@@ -16,6 +16,8 @@ body{
     font-family: 'Recursive';
 }
 
+
+
 /* -------------------------------- Debut Header -------------------------------- */
 
 nav{
@@ -176,6 +178,17 @@ header {
     width: 50vw;
     height: 50vh;
     background-color: #BBE6E4;
+    box-shadow: 0px 10px 0px 12px #FF66B3 ;
+    border-radius: 20px;
+    text-align: center;
+    line-height: 30px;
+}
+
+.C_text_cc{
+    width: 50vw;
+    height: 50vh;
+    background-color: #BBE6E4;
+    box-shadow: 0px 10px 0px 10px #42BFDD ;
     border-radius: 20px;
     text-align: center;
     line-height: 30px;
@@ -189,7 +202,55 @@ header {
     margin-right: 10px;
     /* text-align: justify; */
 }
-  
+
+.Bout{
+    width: 130px;
+    height: 50px;
+    margin: 5px ;
+    padding: 0px 10px;
+    /* right: 40px; */
+    /* top: 10px;
+    position: absolute; */
+    background-color: #FF66B3;
+    color: #F0F6F6;
+    border: 1px solid #FF66B3;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 17px;
+    cursor: pointer;
+    transition: all 250ms ease-in;
+}
+
+.Bout:hover {
+    border: 1px solid #FF66B3;
+    background: transparent;
+    color: #FF66B3;
+}
+
+.Boutt{
+    width: 130px;
+    height: 50px;
+    margin: 5px ;
+    padding: 0px 10px;
+    /* right: 40px; */
+    /* top: 10px;
+    position: absolute; */
+    background-color: #42BFDD;
+    color: #F0F6F6;
+    border: 1px solid #42BFDD;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 17px;
+    cursor: pointer;
+    transition: all 250ms ease-in;
+}
+
+.Boutt:hover {
+    border: 1px solid #42BFDD;
+    background: transparent;
+    color: #42BFDD;
+}
+
 
 
 /* -------------------------------------- Debut footer ------------------------------------- */
@@ -259,3 +320,227 @@ header {
 
 /* -------------------------------------- Fin  footer ------------------------------------- */
 
+
+/*------------------------------------------- DEBUT HUMBERGER -----------------------------------*/
+
+.hamburger {
+  display: none;
+}
+.hamburger .hamburger__container {
+  display: block;
+  position: relative;
+  z-index: 999;
+  top: 4em;
+  left: 0.5em;
+  cursor: pointer;
+  width: 4rem;
+  height: 2rem;
+  transition: opacity 150ms ease-in;
+}
+.hamburger .hamburger__container:hover {
+  opacity: 0.9;
+}
+.hamburger .hamburger__container .hamone,
+.hamburger .hamburger__container .hamtwo,
+.hamburger .hamburger__container .hamthree {
+  content: "";
+  position: absolute;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 12%;
+  background: #084B83;
+  border-radius: 100vw;
+}
+.hamburger .hamburger__container .hamone {
+  transition: all 200ms ease-in;
+  top: 0;
+}
+.hamburger .hamburger__container .hamtwo {
+  transition: all 300ms ease-in;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 75%;
+}
+.hamburger .hamburger__container .hamthree {
+  width: 30%;
+  transform-origin: right;
+  bottom: 0;
+}
+.hamburger .hamburger__container.active .hamone,
+.hamburger .hamburger__container.active .hamtwo,
+.hamburger .hamburger__container.active .hamthree {
+  background: rgb(255, 255, 255);
+}
+.hamburger .hamburger__container.active .hamtwo {
+  width: 100%;
+}
+.hamburger .hamburger__container.active .hamone {
+  width: 30%;
+  transform-origin: right;
+  transform: translateX(-25%) rotate(-48deg);
+}
+.hamburger .hamburger__container.active .hamthree {
+  width: 30%;
+  transform-origin: right;
+  transform: translateX(-25%) rotate(48deg);
+}
+.hamburger .hamburger__content {
+  transform: translateX(-110%);
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 50vh;
+  background-color: #42BFDD;
+  transition: tranform 500ms ease-in;
+}
+.hamburger .hamburger__content ul {
+  padding-block: 1rem;
+  display: flex;
+  flex-direction: column;
+  height: 80%;
+  align-items: center;
+  justify-content: space-between;
+}
+.hamburger .hamburger__content li a {
+  color: #ffffff;
+  font-size: 15px;
+}
+.hamburger .hamburger__content li a.active_ {
+  border-radius: 3px;
+  background-color: #FF66B3;
+  padding: 1rem;
+  border-radius: 1rem;
+  border: 1px solid white;
+}
+.hamburger .hamburger__content.active {
+  transform: translateX(0);
+}
+
+@media screen and (max-width: 1280px) and (min-width: 1000px) {
+  .hamburger {
+    display: block;
+  }
+  .hamburger .hamburger__container {
+    display: block;
+    position: relative;
+    z-index: 999;
+    top: 8em;
+  }
+}
+@media screen and (max-width: 1000px) and (min-width: 500px) {
+  .hamburger {
+    display: block;
+  }
+  .hamburger .hamburger__container {
+    display: block;
+    position: relative;
+    z-index: 999;
+    top: 6em;
+  }
+}
+@media screen and (max-width: 500px) and (min-width: 375px) {
+  .hamburger {
+    display: block;
+  }
+  .hamburger .hamburger__container {
+    display: block;
+    position: relative;
+    z-index: 999;
+    top: 4em;
+  }
+}
+/*------------------------------------------- FIN HUMBERGER -----------------------------------*/
+
+/* ------------------------------------- ------ Debut HEADER -------------------------------------- */
+
+@media screen and (max-width: 1280px) and (min-width: 1000px) {
+  header {
+    display: none;
+}}
+@media screen and (max-width: 1000px) and (min-width: 500px) {
+  header {
+      display: none;
+}}
+@media screen and (max-width: 500px) and (min-width: 375px) {
+  header{
+      display: none;
+}}
+
+/*------------------------------------- ------ Fin HEADER -------------------------------------- */
+
+/* ------------------------------------- ------ Debut  Blog -------------------------------------- */
+
+@media screen and (max-width: 1280px) and (min-width: 1000px) {
+  .image__wrapper__ {
+      display: none;
+  }
+  .image__wrapper__1 {
+    display: none;
+}
+  .image__wrapper__2 {
+    display: none;
+  }
+  .C_text_c{
+    width: 80vw;
+  }
+  .C_text_cc{
+    width: 80vw;
+  }
+  
+  .C_text{
+      width: 80vw;
+      font-size: 25px;
+      line-height: 50px;
+  }
+}
+
+@media screen and (max-width: 1000px) and (min-width: 500px) {
+  .image__wrapper__ {
+    display: none;
+  }
+  .image__wrapper__1 {
+    display: none;
+  }
+  .image__wrapper__2 {
+    display: none;
+  }
+  .C_text_c{
+    width: 80vw;
+  }
+  .C_text_cc{
+    width: 80vw;
+  }
+  .C_text{
+      width: 80vw;
+      font-size: 20px;
+      line-height: 40px;
+  }
+}
+
+@media screen and (max-width: 500px) and (min-width: 375px) {
+  .image__wrapper__ {
+    display: none;
+  }
+  .image__wrapper__1 {
+    display: none;
+  }
+  .image__wrapper__2 {
+    display: none;
+  }
+  .C_text_c{
+    width: 80vw;
+  }
+  .C_text_cc{
+    width: 80vw;
+  }
+  .C_text{
+      width: 80vw;
+      font-size: 18px;
+      line-height: 32px;
+  }
+}
+
+/* ------------------------------------- ------ Fin blog-------------------------------------- */
